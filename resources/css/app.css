@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        color-scheme: dark;
+    }
+
+    body {
+        background: #06141B;
+    }
+
+    * {
+        letter-spacing: 0;
+    }
+}
+
+@layer components {
+    .glass-panel {
+        @apply rounded-lg border border-white/10 bg-white/10 shadow-2xl shadow-black/20 backdrop-blur;
+    }
+}
